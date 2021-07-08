@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "stuNavigator",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

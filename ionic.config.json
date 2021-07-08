@@ -1,0 +1,7 @@
+{
+  "name": "stuNavigator",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
