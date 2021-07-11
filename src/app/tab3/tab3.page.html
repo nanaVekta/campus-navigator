@@ -1,17 +1,45 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="wrapper">
+    <h2 class="title">Hey, we understand you can't do it all alone</h2>
+    <h5 class="description">Find contacts you can call immediately for help or assistance</h5>
+  </div>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card>
+    <ion-card-content>
+      <ion-list lines="none">
+        <ion-item>
+          <ion-label>
+            <h2 class="card-title"><ion-icon name="call-outline"></ion-icon> Clinic</h2>
+          </ion-label>
+          <a slot="end" href="#">Call now</a>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-card>
+    <ion-card-content>
+      <ion-list lines="none">
+        <ion-item>
+          <ion-label>
+            <h2 class="card-title"><ion-icon name="call-outline"></ion-icon> Libarian</h2>
+          </ion-label>
+          <a slot="end" href="#">Call now</a>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+      <ion-list lines="none">
+        <ion-item>
+          <ion-label>
+            <h2 class="card-title"><ion-icon name="call-outline"></ion-icon> General direction</h2>
+          </ion-label>
+          <a slot="end" href="#">Call now</a>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

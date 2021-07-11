@@ -3,8 +3,20 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'tabsPage',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+  },
+  {
+    path: 'onboarding-one',
+    loadChildren: () => import('./onboarding-one/onboarding-one.module').then( m => m.OnboardingOnePageModule)
+  },
+  {
+    path: '',
+    loadChildren: () => import('./onboarding-one/onboarding-one.module').then( m => m.OnboardingOnePageModule)
+  },
+  {
+    path: 'onboarding-two',
+    loadChildren: () => import('./onboarding-two/onboarding-two.module').then( m => m.OnboardingTwoPageModule)
   }
 ];
 @NgModule({

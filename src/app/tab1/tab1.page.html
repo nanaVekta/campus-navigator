@@ -1,17 +1,17 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <div class="search-bar">
+    <ion-searchbar placeholder="search places on campus"></ion-searchbar>
+  </div>
+  <agm-map [longitude] = 'longitude' [latitude] = 'latitude' [zoom] = 'zoom' (mapReady)="mapReadyFunc($event)">
+    <agm-marker *ngFor="let place of places"
+    [latitude]='place.lat' [longitude]='place.long' >
+      <agm-info-window>
+        <b>{{place.name}}</b>
+        <br>
+        <br>
+        <a class="anchor-button" (click)="gotoLocation(place.lat, place.long)">Navigate</a>
+      </agm-info-window>
+  </agm-marker>
+  </agm-map>
 </ion-content>

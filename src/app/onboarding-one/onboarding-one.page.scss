@@ -1,0 +1,42 @@
+.onboarding-image {
+  margin-top: 70px;
+}
+
+.image-div{
+  text-align: center;
+}
+
+.onboarding-header {
+  font-weight: bolder;
+  margin-top: 30px;
+}
+
+.onbaording-description {
+  margin-left: 50px;
+  margin-right: 50px;
+  line-height: 30px;
+}
+
+.onboarding-button{
+  margin-top: 50px;
+  margin-left: 60px;
+  margin-right: 60px;
+  --background: #006633;
+  --padding-bottom: 30px;
+  --padding-top: 30px;
+  --border-radius: 15px;
+  font-style: normal;
+  text-transform: initial;
+  font-size: 20px;
+}
+
+.onboarding-anchor {
+  color: #006633;
+  margin-top: 40px;
+  --background: transparent;
+  --border-style: none;
+  --border-width: 0px;
+  --box-shadow: none;
+  text-transform: initial;
+  font-size: 20px;
+}

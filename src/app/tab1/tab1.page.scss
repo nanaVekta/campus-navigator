@@ -1,0 +1,32 @@
+agm-map{
+  height: 100%;
+}
+
+ion-searchbar{
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: 10%;
+  --border-radius: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+ion-card{
+  box-shadow: none;
+}
+
+.search-bar {
+  background-color: transparent;
+  position: absolute;
+  z-index: 20;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+.anchor-button{
+  background-color: #006633;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
